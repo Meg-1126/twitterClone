@@ -3,7 +3,6 @@
     --right-sidebar-width: 30vw;
 }
 
-
 /* Right Sidebar CSS */
 .search {
     display:flex;
@@ -54,4 +53,134 @@
 .news-image {
     height: 68px;
     width: 68px;
+
+/*
+.container{
+    display: flex;
+    width: 100%;
+} */
+
+.left-sidebar{
+    display: block;
+    position: sticky;
+    flex-direction: column;
+    border-right: 1px solid rgba(230, 230, 230, 1);
+  /*  max-height: 100vh;   */ 
+    width: var(--left-sidebar-width);  
+  /*  top: 0;
+    left: 0; */
+ /*   flex-shrink: 0;  
+    overflow: hidden;   */
+}
+
+.top-sidebar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    color: rgb(104, 64, 143);
+  /*  height: var(--top-sidebar-height);   */
+}
+
+.middle-sidebar ul{
+    display: flex;
+    flex-direction:column ;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 24px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center; 
+}
+
+
+.sidebar-item i {
+    color: rgb(104, 64, 143);
+    padding-right: 25px;
+}
+
+.sidebar-item p {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 13px 0px;
+}
+
+.tweet-option {
+    background-color: rgb(104, 64, 143);
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 15px 90px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 50px;
+}
+
+/*
+.top-sidebar .home-btn {
+    display: block;
+    height: 23px;
+    width: 40.5px;
+    padding: 40px 0;
+    fill: rgb(150, 40, 160);
+} */
+
+/*
+.content{
+    display: block;
+    width: var(--content-width);
+    padding: 1rem;
+    margin: 0 10rem;
+}
+
+.sidebar-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar-item{
+    position: relative;
+    width: 100%;
+    text-decoration: none; 
+}  */
+
+
+
+
+.sidebar-link{
+    display: flex;
+    padding: 18px 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    stroke: rgba(117, 117, 117, 1);
+    fill: none;
+    transition: 300ms;
+}
+
+.sidebar-link:hover{
+    stroke: black;
+}
+/*
+.bottom-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+    height: var(--bottom-sidebar-height);
+}
+
+.bottom-sidebar .sidebar-profile-img{
+    text-decoration: none;
+    color: transparent;
+}
+.bottom-sidebar .sidebar-profile-img > img{
+    border-radius: 50%;
 }
