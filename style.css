@@ -137,23 +137,26 @@
 /* Right Sidebar CSS */
 .search {
     display:flex;
-    
+    margin-top: 10px; 
+    margin-bottom: 10px;   
 }
 
 .search-bar {
     border-color: #DCCEF5;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 15px 15px 0px;
     background-color: #DCCEF5;
     border-left: none;
     padding-left:0;
+    width: 250px;
 }
 
 .search-button {
     border-color: #DCCEF5;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 15px 0px 0px 15px;
     background-color: #DCCEF5;
     border-right: none;
     padding-right:0;
+    height: 30px;
 }
 
 .news {
@@ -161,18 +164,28 @@
     width: 20vw;
     border-radius: 15px 15px 15px 15px;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .news-main-title {
     font-family: Arial;
     font-weight: bold;
     font-size: 20px;
+    margin-top: 5px;
+}
+
+.news-text-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 .news-period {
     font-family: Arial;
     font-size: 10px;
     color: gray;
+    margin-top: 0;
 }
 
 .news-title {
@@ -184,4 +197,66 @@
 .news-image {
     height: 68px;
     width: 68px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.show-more {
+    font-family: Arial;
+    font-size: 12px;
+    color: rgb(104, 64, 143);
+}
+
+.who-to-follow {
+    background-color: #DCCEF5;
+    width: 20vw;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+}
+
+.who-to-follow-main-title {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+
+.who-to-follow-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.who-to-follow-image {
+    height: 47px;
+    width: 47px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.who-to-follow-contact {
+    margin-left: 10px;
+}
+
+.who-to-follow-name {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.who-to-follow-at {
+    font-family: Arial;
+    font-size: 10px;
+    color: gray;
+}
+
+.follow-button {
+    background-color: rgb(104, 64, 143);
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 12px 5px 12px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 50px;
 }
