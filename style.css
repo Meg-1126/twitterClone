@@ -211,6 +211,7 @@
     width: 20vw;
     border-radius: 15px 15px 15px 15px;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .who-to-follow-main-title {
@@ -259,4 +260,11 @@
     margin-left: 50px;
     border: none;
     border-radius: 50px;
+}
+
+.terms-text {
+    font-family: Arial;
+    font-size: 10px;
+    color: gray;
+    margin: 2px 2px 2px 2px;
 }
