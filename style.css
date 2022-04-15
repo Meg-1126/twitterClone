@@ -1,0 +1,96 @@
+/* MAIN SECTION */
+/* MAIN SECTION -COMMON- */
+.tweet-container:hover {
+  background-color: rgba(235,235,235,0.4);
+  cursor: pointer;
+}
+
+/* EDIT TWEET */
+.main-tweet {
+  width: 600px;
+  border: 1px solid blue; /*Delete later*/
+}
+
+.edit-tweet {
+  padding: 10px 10px;
+  border: 1px solid #F0F3F4; /*Delete later*/
+}
+
+.edit-tweet-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading-home {
+  font-size: 20px;
+  color: rgb(15, 20, 25);
+  font-weight: bold;
+}
+
+.btn-top-tweets {
+  width: 34px;
+  height: 34px;
+}
+
+.edit-tweet-main {
+  display: flex;
+}
+
+.img-profile-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding-right: 5px;
+}
+
+.edit-tweet-right {
+  width: 520px;
+}
+
+.icons-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-tweet {
+  width: 500px;
+  height: 75px;
+  border: none;
+  outline: none;
+}
+
+/* .input-tweet:hover {
+  background-color: rgba(235,235,235,0.4);
+} */
+
+.btn-tweet {
+  width: 85px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+/* TWEET1 */
+.content-tweet {
+  padding: 10px 10px;
+  border: 1px solid #F0F3F4; /*Delete later*/
+  display: flex;
+}
+
+.content-img {
+  width: 510px;
+  height: 285px;
+  border-radius: 20px;
+}
+
+.content-img:hover {
+  cursor: pointer;
+}
+/* TWEET2 */
+
+
+/* TWEET3 */
