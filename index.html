@@ -9,17 +9,70 @@
     <link rel="stylesheet" href="normalize.css" />
 
     <!-- FONTS -->
+  <script src="https://kit.fontawesome.com/55f60bf8e7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- WEBSITE STYLE -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <!-- LEFT SECTION -->
-      <section class="left-menu"></section>
-      <!-- MAIN SECTION -->
-      <section class="main-tweet">
-        <div class="edit-tweet tweet-container">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+
+
+  <!-- WEBSITE STYLE -->
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/55f60bf8e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- LEFT SECTION -->
+    <div class="left-sidebar">
+        <div class="top-sidebar">
+          <i class="fa-brands fa-twitter fa-2x"></i>  
+        </div>
+        <div class="middle-sidebar">
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <i class="fa-solid fa-house fa-xl"></i>
+              <p>Home</p>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-hashtag fa-xl"></i>
+              <p>Explore</p>  
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-regular fa-bell fa-xl"></i>
+              <p>Notifications</p>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-regular fa-envelope fa-xl"></i>
+              <p>Messages</p>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-regular fa-bookmark fa-xl"></i>
+              <p>Bookmarks</p>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-clipboard-list fa-xl"></i>
+              <p>Lists</p>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-user fa-xl"></i>
+              <p>Profile</p>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-circle-chevron-down fa-xl"></i>
+              <p>More</p>
+            </li>
+          </ul>
+            <button class="tweet-option">Tweet</button>  
+        </div>
+        <div class="bottom-sidebar">
+            
+        </div>
+    </div>
+
+    <!-- MAIN SECTION -->
+    <section class="main-tweet">
+       <div class="edit-tweet tweet-container">
           <div class="edit-tweet-heading">
             <span class="heading-home">Home</span>
             <button class="btn-top-tweets">
@@ -119,8 +172,110 @@
           </div>
         </div>
       </section>
+    
       <!-- RIGHT SECTION -->
-      <section class="right-menu"></section>
-    </div>
-  </body>
+      <section class="right-menu">
+      <div class="right-sidebar">
+
+        <div class="search">
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+            <input type="text" class="search-bar" placeholder="Search Twitter">
+        </div>
+
+        <div class="news">
+          <p class="news-main-title">What’s happening</p>
+          
+          <div class="news-text-container">
+            <div class="news-text">
+              <p class="news-period">Business & finance · Earlier today</p>
+              <p class="news-title">Elon Musk makes offer to buy Twitter</p>
+              <p class="news-period">Trending with Elon, #TwitterTakeover</p>
+            </div>
+            <div>
+              <img class="news-image" alt="Elon Musk" src="images/elon-musk.jpg">
+            </div>
+          </div>
+
+          <div class="news-text-container">
+            <div class="news-text">
+              <p class="news-period">News · April 14, 2022</p>
+              <p class="news-title">The UK government plans to send some asylum seekers to Rwanda, Boris Johnson announces</p>
+              <p class="news-period">Trending with Rwanda</p>
+            </div>
+            <div>
+              <img class="news-image" alt="UK government" src="images/uk-government.jpg">
+            </div>
+          </div>
+
+          <div class="news-text-container">
+            <div class="news-text">
+              <p class="news-period">War in Ukraine · LIVE</p>
+              <p class="news-title">Explosions reported in Kyiv after Russian warship sinks in the Black Sea</p>
+              <p class="news-period">Trending with Moskva</p>
+            </div>
+            <div>
+              <img class="news-image" alt="Ukraine war" src="images/war-ukraine.jpg">
+            </div>
+          </div>
+
+          <p class="show-more">Show more</p>
+
+        </div>
+
+        <div class="who-to-follow">
+          <p class="who-to-follow-main-title">Who to follow</p>
+          <div class="who-to-follow-profile">
+            <div>
+              <img class="who-to-follow-image" alt=".Net logo" src="images/net.jpg">
+            </div>
+            <div class="who-to-follow-contact">
+              <p class="who-to-follow-name">.NET</p>
+              <p class="who-to-follow-at">@dotnet</p>
+            </div>
+            <div class="who-to-follow-button">
+              <button class="follow-button">Follow</button> 
+            </div>
+          </div>
+
+          <div class="who-to-follow-profile">
+            <div>
+              <img class="who-to-follow-image" alt="Angular logo" src="images/angular.jpg">
+            </div>
+            <div class="who-to-follow-contact">
+              <p class="who-to-follow-name">Angular</p>
+              <p class="who-to-follow-at">@angular</p>
+            </div>
+            <div class="who-to-follow-button">
+              <button class="follow-button">Follow</button> 
+            </div>
+          </div>
+
+          <div class="who-to-follow-profile">
+            <div>
+              <img class="who-to-follow-image" alt="Azure logo" src="images/azure.jpg">
+            </div>
+            <div class="who-to-follow-contact">
+              <p class="who-to-follow-name">Microsoft Azure</p>
+              <p class="who-to-follow-at">@azure</p>
+            </div>
+            <div class="who-to-follow-button">
+              <button class="follow-button">Follow</button> 
+            </div>
+          </div>
+          <p class="show-more">Show more</p>
+        </div>
+
+        <div>
+          <p class="terms-text">Terms of Service  Privacy Policy  Cookie Policy</p>
+          <p class="terms-text">Accessibility  Ads info  More</p>
+          <p class="terms-text">© 2022 Twitter, Inc.</p>
+        </div>
+
+      </div>
+      
+    </section>
+  </div> 
+</body>
 </html>
