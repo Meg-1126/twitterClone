@@ -336,7 +336,6 @@ body {
 }
 
 .news-main-title {
-    font-family: Arial;
     font-weight: bold;
     font-size: 20px;
     margin-top: 5px;
@@ -350,14 +349,12 @@ body {
 }
 
 .news-period {
-    font-family: Arial;
     font-size: 10px;
     color: gray;
     margin-top: 0;
 }
 
 .news-title {
-    font-family: Arial;
     font-size:12px;
     font-weight: bold;
 }
@@ -369,7 +366,6 @@ body {
 }
 
 .show-more {
-    font-family: Arial;
     font-size: 12px;
     color: rgb(104, 64, 143);
 }
@@ -383,7 +379,6 @@ body {
 }
 
 .who-to-follow-main-title {
-    font-family: Arial;
     font-weight: bold;
     font-size: 20px;
     margin-top: 5px;
@@ -408,13 +403,11 @@ body {
 }
 
 .who-to-follow-name {
-    font-family: Arial;
     font-weight: bold;
     font-size: 10px;
 }
 
 .who-to-follow-at {
-    font-family: Arial;
     font-size: 10px;
     color: gray;
 }
@@ -422,7 +415,6 @@ body {
 .follow-button {
     background-color: rgb(104, 64, 143);
     color: white;
-    font-family: Arial;
     font-weight: bold;
     font-size: 12px;
     padding: 5px 12px 5px 12px;
@@ -432,7 +424,6 @@ body {
 }
 
 .terms-text {
-    font-family: Arial;
     font-size: 10px;
     color: gray;
     margin: 2px 2px 2px 2px;
