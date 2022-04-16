@@ -2,32 +2,18 @@
     box-sizing: border-box;
     
 }
-/*
-body{
-    margin: 0;
-}
-*/
+
 :root{
     --left-sidebar-width: 300px;
     --right-sidebar-width: 30vw;
 }
-/*
-.container{
-    display: flex;
-    width: 100%;
-} */
 
 .left-sidebar{
     display: block;
     position: sticky;
     flex-direction: column;
     border-right: 1px solid rgba(230, 230, 230, 1);
-  /*  max-height: 100vh;   */ 
     width: var(--left-sidebar-width);  
-  /*  top: 0;
-    left: 0; */
- /*   flex-shrink: 0;  
-    overflow: hidden;   */
 }
 
 .top-sidebar{
@@ -35,7 +21,6 @@ body{
     flex-direction: column;
     margin-left: 60px;
     color: rgb(104, 64, 143);
-  /*  height: var(--top-sidebar-height);   */
 }
 
 .middle-sidebar ul{
@@ -50,7 +35,6 @@ body{
     display: flex;
     align-items: center; 
 }
-
 
 .sidebar-item i {
     color: rgb(104, 64, 143);
@@ -76,68 +60,41 @@ body{
     border-radius: 50px;
 }
 
-/*
-.top-sidebar .home-btn {
-    display: block;
-    height: 23px;
-    width: 40.5px;
-    padding: 40px 0;
-    fill: rgb(150, 40, 160);
-} */
-
-/*
-.content{
-    display: block;
-    width: var(--content-width);
-    padding: 1rem;
-    margin: 0 10rem;
+.tweet-option:hover {
+    background-color: rgb(72, 46, 99);;
+    transition: background-color .5s;
+    cursor: pointer;
 }
 
-.sidebar-list{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.sidebar-item {
+    background-color: white;
+    transition: background-color .5s;
+    cursor: pointer;
+}  
+
+.sidebar-item:hover {
+    background-color: rgb(197, 197, 195);
+    padding-left: 10px;
+    border-radius: 50px;
 }
 
-.sidebar-item{
-    position: relative;
-    width: 100%;
-    text-decoration: none; 
-}  */
-
-
-
-
-.sidebar-link{
-    display: flex;
-    padding: 18px 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    stroke: rgba(117, 117, 117, 1);
-    fill: none;
-    transition: 300ms;
-}
-
-.sidebar-link:hover{
-    stroke: black;
-}
-/*
 .bottom-sidebar{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    padding-bottom: 2rem;
-    height: var(--bottom-sidebar-height);
-}
+    justify-content: center;
+    padding-top: 70px;
+    font-family: 'Karla', sans-serif;
+}   
 
-.bottom-sidebar .sidebar-profile-img{
-    text-decoration: none;
-    color: transparent;
-}
-.bottom-sidebar .sidebar-profile-img > img{
+.bottom-sidebar img{
     border-radius: 50%;
 }
+
+.user-info p {
+    margin: 5px;
+    font-weight: bold;
+}
+
+.user-email {
+    color: gray;
+}
+
