@@ -3,11 +3,15 @@
     --right-sidebar-width: 30vw;
 }
 
-/*
+/* body {
+  font-family: 'Karla', Arial, sans-serif
+} */
+
+
 .container{
     display: flex;
     width: 100%;
-} */
+}
 
 .left-sidebar{
     display: block;
@@ -137,14 +141,17 @@
 /* MAIN SECTION */
 /* MAIN SECTION -COMMON- */
 .tweet-container:hover {
-  background-color: rgba(235,235,235,0.4);
+  background-color: rgba(235, 235, 235, 0.4);
   cursor: pointer;
 }
 
 /* EDIT TWEET */
 .main-tweet {
-  width: 600px;
-  border: 1px solid blue; /*Delete later*/
+  width: 50vw;
+}
+
+.main-tweet i {
+  color: rgb(104, 64, 143);
 }
 
 .edit-tweet {
@@ -160,12 +167,14 @@
 .heading-home {
   font-size: 20px;
   color: rgb(15, 20, 25);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .btn-top-tweets {
   width: 34px;
   height: 34px;
+  border: none;
+  background-color: transparent;
 }
 
 .edit-tweet-main {
@@ -175,8 +184,8 @@
 .img-profile-icon {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
-  padding-right: 5px;
+  border-radius: 80% 30% 50% 50%/50%;
+  padding-right: 15px;
 }
 
 .edit-tweet-right {
@@ -189,47 +198,68 @@
   align-items: center;
 }
 
+.icons-wrapper .fa-solid {
+  padding-right: 20px;
+}
+
 .input-tweet {
   width: 500px;
   height: 75px;
   border: none;
   outline: none;
+  font-size: 20px;
+  background-color: transparent;
 }
-
-/* .input-tweet:hover {
-  background-color: rgba(235,235,235,0.4);
-} */
 
 .btn-tweet {
   width: 85px;
   height: 40px;
   border: none;
   border-radius: 30px;
+  color: white;
   font-weight: bold;
   margin-right: 10px;
+  background-color: rgb(104, 64, 143);
 }
 
 
-/* TWEET1 */
+/* TWEET */
 .content-tweet {
   padding: 10px 10px;
-  border: 1px solid #F0F3F4; /*Delete later*/
+  border: 1px solid rgba(230, 230, 230, 1); 
   display: flex;
 }
 
+.content-tweet-right {
+  width: 85%;
+}
+
 .content-img {
-  width: 510px;
+  width: 500px;
   height: 285px;
   border-radius: 20px;
+}
+
+.content-tweet-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-more {
+  border: none;
+  background-color: transparent;
 }
 
 .content-img:hover {
   cursor: pointer;
 }
-/* TWEET2 */
 
-
-/* TWEET3 */
+.icons-reaction {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+/* MAIN SECTION ENDS */
 
 /* Right Sidebar CSS */
 .search {
