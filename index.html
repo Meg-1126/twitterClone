@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clone Twitter</title>
-  <!-- NORMARIZE CSS -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clone Twitter</title>
+    <!-- NORMARIZE CSS -->
+    <link rel="stylesheet" href="normalize.css" />
 
-  <!-- FONTS -->
+    <!-- FONTS -->
+  <script src="https://kit.fontawesome.com/55f60bf8e7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+
 
   <!-- WEBSITE STYLE -->
   <link rel="stylesheet" href="style.css">
@@ -74,11 +79,236 @@
     </div>
     <!-- MAIN SECTION -->
     <section class="main-tweet">
+       <div class="edit-tweet">
+          <div class="edit-tweet-heading">
+            <span class="heading-home">Home</span>
+            <button class="btn-top-tweets">
+              <i class="fa-solid fa-star-and-crescent"></i>
+            </button>
+          </div>
+          <div class="edit-tweet-main">
+            <img class="img-profile-icon" src="images/img-icon.jpg" alt="Profile icon" />
+            <div class="edit-tweet-right">
+              <input
+                type="text"
+                class="input-tweet"
+                placeholder="What's happening?"
+              />
+              <div class="icons-btn-wrapper">
+                <div class="icons-wrapper">
+                  <i class="fa-solid fa-image"></i>
+                  <i class="fa-solid fa-video"></i>
+                  <i class="fa-solid fa-microphone"></i>
+                  <i class="fa-solid fa-face-kiss-wink-heart"></i>
+                  <i class="fa-solid fa-calendar-plus"></i>
+                  <i class="fa-solid fa-location-pin-lock"></i>
+                </div>
+                <button class="btn-tweet">Tweet</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    </section>
-    <!-- RIGHT SECTION -->
-    <section class="right-menu">
+        <div class="content-tweet">
+          <img class="img-profile-icon" src="images/img-icon.jpg" alt="Profile icon" />
+          <div class="content-tweet-right">
+            <div class="content-tweet-heading">
+              <div class="content-name-id-time">
+                <span class="content-tweet-name">CuteDog</span>
+                <span class="content-id-time">@myNameIsDog・8m</span>
+              </div>
+              <button class="btn-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </button>
+            </div>
+            <div class="content-text-img">
+              <p class="tweet-example">It was an amazing meet-up! &#10024;</p>
+              <img class="content-img" src="images/img-tweet-sample.jpg" alt="Sample image" />
+            </div>
+            <div class="icons-reaction">
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-comment-dots"></i><span>&nbsp;11</span>
+              </div>
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-retweet"></i><span>&nbsp;1</span>
+              </div>
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-heart-pulse"></i><span>&nbsp;</span>
+              </div>
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i><span>&nbsp;</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="content-tweet">
+          <img class="img-profile-icon" src="images/img-icon.jpg" alt="Profile icon" />
+          <div class="content-tweet-right">
+            <div class="content-tweet-heading">
+              <div class="content-name-id-time">
+                <span class="content-tweet-name">CuteDog</span>
+                <span class="content-id-time">@myNameIsDog・28m</span>
+              </div>
+              <button class="btn-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </button>
+            </div>
+            <div class="content-text-img">
+              <p class="tweet-example">My body is craving &#127830;...</p>
+            </div>
+            <div class="icons-reaction">
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-comment-dots"></i><span>&nbsp;</span>
+              </div>
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-retweet"></i><span>&nbsp;1,024</span>
+              </div>
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-heart-pulse"></i><span>&nbsp;15.4K</span>
+              </div>
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i><span>&nbsp;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-tweet">
+          <img class="img-profile-icon" src="images/img-icon.jpg" alt="Profile icon" />
+          <div class="content-tweet-right">
+            <div class="content-tweet-heading">
+              <div class="content-name-id-time">
+                <span class="content-tweet-name">CuteDog</span>
+                <span class="content-id-time">@myNameIsDog・2d</span>
+              </div>
+              <button class="btn-more">
+                <i class="fa-solid fa-ellipsis"></i>
+              </button>
+            </div>
+            <div class="content-text-img">
+              <p class="tweet-example">Meow!</p>
+            </div>
+            <div class="icons-reaction">
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-comment-dots"></i><span>&nbsp;1</span>
+              </div>
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-retweet"></i><span>&nbsp;&nbsp;</span>
+              </div>
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-heart-pulse"></i><span>&nbsp;53</span>
+              </div>
+              <div class="icons-reaction-wrapper">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i><span>&nbsp;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- RIGHT SECTION -->
+      <section class="right-menu">
+      <div class="right-sidebar">
+
+        <div class="search">
+            <button type="submit" class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+            <input type="text" class="search-bar" placeholder="Search Twitter">
+        </div>
+
+        <div class="news">
+          <p class="news-main-title">What’s happening</p>
+          
+          <div class="news-text-container">
+            <div class="news-text">
+              <p class="news-period">Business & finance · Earlier today</p>
+              <p class="news-title">Elon Musk makes offer to buy Twitter</p>
+              <p class="news-period">Trending with Elon, #TwitterTakeover</p>
+            </div>
+            <div>
+              <img class="news-image" alt="Elon Musk" src="images/elon-musk.jpg">
+            </div>
+          </div>
+
+          <div class="news-text-container">
+            <div class="news-text">
+              <p class="news-period">News · April 14, 2022</p>
+              <p class="news-title">The UK government plans to send some asylum seekers to Rwanda, Boris Johnson announces</p>
+              <p class="news-period">Trending with Rwanda</p>
+            </div>
+            <div>
+              <img class="news-image" alt="UK government" src="images/uk-government.jpg">
+            </div>
+          </div>
+
+          <div class="news-text-container">
+            <div class="news-text">
+              <p class="news-period">War in Ukraine · LIVE</p>
+              <p class="news-title">Explosions reported in Kyiv after Russian warship sinks in the Black Sea</p>
+              <p class="news-period">Trending with Moskva</p>
+            </div>
+            <div>
+              <img class="news-image" alt="Ukraine war" src="images/war-ukraine.jpg">
+            </div>
+          </div>
+
+          <p class="show-more">Show more</p>
+
+        </div>
+
+        <div class="who-to-follow">
+          <p class="who-to-follow-main-title">Who to follow</p>
+          <div class="who-to-follow-profile">
+            <div>
+              <img class="who-to-follow-image" alt=".Net logo" src="images/net.jpg">
+            </div>
+            <div class="who-to-follow-contact">
+              <p class="who-to-follow-name">.NET</p>
+              <p class="who-to-follow-at">@dotnet</p>
+            </div>
+            <div class="who-to-follow-button">
+              <button class="follow-button">Follow</button> 
+            </div>
+          </div>
+
+          <div class="who-to-follow-profile">
+            <div>
+              <img class="who-to-follow-image" alt="Angular logo" src="images/angular.jpg">
+            </div>
+            <div class="who-to-follow-contact">
+              <p class="who-to-follow-name">Angular</p>
+              <p class="who-to-follow-at">@angular</p>
+            </div>
+            <div class="who-to-follow-button">
+              <button class="follow-button">Follow</button> 
+            </div>
+          </div>
+
+          <div class="who-to-follow-profile">
+            <div>
+              <img class="who-to-follow-image" alt="Azure logo" src="images/azure.jpg">
+            </div>
+            <div class="who-to-follow-contact">
+              <p class="who-to-follow-name">Microsoft Azure</p>
+              <p class="who-to-follow-at">@azure</p>
+            </div>
+            <div class="who-to-follow-button">
+              <button class="follow-button">Follow</button> 
+            </div>
+          </div>
+          <p class="show-more">Show more</p>
+        </div>
+
+        <div>
+          <p class="terms-text">Terms of Service  Privacy Policy  Cookie Policy</p>
+          <p class="terms-text">Accessibility  Ads info  More</p>
+          <p class="terms-text">© 2022 Twitter, Inc.</p>
+        </div>
+
+      </div>
+      
     </section>
   </div> 
 </body>
