@@ -1,4 +1,12 @@
-/* naomi  */
+$font-stack: 'Karla', Arial, sans-serif;
+$primary-color: rgb(104, 64, 143);
+$secondary-color: rgb(72, 46, 99);
+$right-sidebar-color: #DCCEF5;
+
+%sidebar-flexbox {
+    display: flex;
+    flex-direction: column;
+}
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -6,7 +14,7 @@
 }
 
 body {
-  font-family: 'Karla', Arial, sans-serif
+  font: 100% $font-stack;
 }
 
 .container{
@@ -28,15 +36,13 @@ body {
 }
 
 .top-sidebar{
-    display: flex;
-    flex-direction: column;
+    @extend %sidebar-flexbox;
     margin-left: 60px;
-    color: rgb(104, 64, 143);
+    color: $primary-color;
 }
 
 .middle-sidebar ul{
-    display: flex;
-    flex-direction:column ;
+    @extend %sidebar-flexbox;
     list-style-type: none;
     margin-top: 10px;
     margin-left: 24px;
@@ -48,21 +54,21 @@ body {
 }
 
 .sidebar-item i {
-    color: rgb(104, 64, 143);
+    color: $primary-color;
     padding-right: 25px;
 }
 
 .sidebar-item p {
-    font-family: 'Karla', sans-serif;
+    font: $font-stack;
     font-weight: bold;
     font-size: 20px;
     margin: 13px 0px;
 }
 
 .tweet-option {
-    background-color: rgb(104, 64, 143);
+    background-color: $primary-color;
     color: white;
-    font-family: 'Karla', sans-serif;
+    font: $font-stack;
     font-weight: bold;
     font-size: 17px;
     padding: 15px 90px;
@@ -72,7 +78,7 @@ body {
 }
 
 .tweet-option:hover {
-    background-color: rgb(72, 46, 99);;
+    background-color: $secondary-color;
     transition: background-color .5s;
     cursor: pointer;
 }
@@ -93,7 +99,6 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 70px;
-    font-family: 'Karla', sans-serif;
 }   
 
 .bottom-sidebar img{
@@ -109,9 +114,6 @@ body {
     color: gray;
 }
 
-/* naomi end */
-
-
 .bottom-sidebar .sidebar-profile-img > img{
     border-radius: 50%;
 }
@@ -125,7 +127,7 @@ body {
 }
 
 .main-tweet i {
-  color: rgb(104, 64, 143);
+  color: $primary-color;
 }
 
 .main-tweet i:hover {
@@ -211,11 +213,11 @@ body {
   color: white;
   font-family: Arial;
   font-weight: bold;
-  background-color: rgb(104, 64, 143);
+  background-color: $primary-color;
 }
 
 .btn-tweet:hover {
-  background-color: rgb(72, 46, 99);;
+  background-color: $secondary-color;
   transition: background-color .5s;
   cursor: pointer;
 }
@@ -290,25 +292,25 @@ body {
 }
 
 .search-bar {
-    border-color: #DCCEF5;
+    border-color: $right-sidebar-color;
     border-radius: 0px 15px 15px 0px;
-    background-color: #DCCEF5;
+    background-color: $right-sidebar-color;
     border-left: none;
     padding-left:0;
-    width: 250px;
+    width: 235px;
 }
 
 .search-button {
-    border-color: #DCCEF5;
+    border-color: $right-sidebar-color;
     border-radius: 15px 0px 0px 15px;
-    background-color: #DCCEF5;
+    background-color: $right-sidebar-color;
     border-right: none;
     padding-right:0;
     height: 30px;
 }
 
 .news {
-    background-color: #DCCEF5;
+    background-color: $right-sidebar-color;
     width: 20vw;
     border-radius: 15px 15px 15px 15px;
     padding: 10px;
@@ -347,11 +349,11 @@ body {
 
 .show-more {
     font-size: 12px;
-    color: rgb(104, 64, 143);
+    color: $primary-color;
 }
 
 .who-to-follow {
-    background-color: #DCCEF5;
+    background-color: $right-sidebar-color;
     width: 20vw;
     border-radius: 15px 15px 15px 15px;
     padding: 10px;
@@ -393,7 +395,7 @@ body {
 }
 
 .follow-button {
-    background-color: rgb(104, 64, 143);
+    background-color: $primary-color;
     color: white;
     font-weight: bold;
     font-size: 12px;
@@ -410,4 +412,3 @@ body {
 }
 
 /* main  */
-
